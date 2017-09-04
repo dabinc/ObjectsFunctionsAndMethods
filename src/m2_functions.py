@@ -32,7 +32,7 @@ def main():
     """
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
-
+    turtle5()
     turtle1()
     turtle4()
     turtle3()
@@ -116,6 +116,19 @@ def turtle4():
         dab.forward(30)
         dab.pen_down()
         dab.draw_circle(100)
+
+
+def turtle5():
+    for k in range(3):
+        nana=rg.SimpleTurtle()
+        nana.pen=rg.Pen('pink',20)
+        nana.speed=40
+        nana.draw_regular_polygon(8,50)
+
+        dudu=rg.SimpleTurtle()
+        dudu.pen=rg.Pen('grey',20)
+        dudu.speed=30
+        dudu.draw_regular_polygon(8,50)
 ########################################################################
 #
 # Done 2
@@ -196,7 +209,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# done 5
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
